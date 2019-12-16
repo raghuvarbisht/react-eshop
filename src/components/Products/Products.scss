@@ -1,0 +1,87 @@
+
+
+
+.character-container {
+    background: #1c1c1c;
+    padding: 7px;
+    width: 222px;
+    display: inline-block; 
+    height: 440px;
+    .character {
+        box-sizing: border-box;
+        width: 220px;
+        height: 430px;
+        border-radius: 0.5rem;
+        background: #333333;
+
+        .character-image {
+            position: relative;
+            height: 220px;
+            .image {
+                width:220px;
+                height: 220px;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;     
+            }
+            .information {
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                background:#1c1c1c;
+                opacity:0.7;
+                color: white;
+                padding-bottom:0.5rem;
+                .name {
+                    font-size: 1.5rem;
+                    opacity:1;
+                    padding: 0.25rem 0 0 0.5rem;
+                }
+                .created-ago{
+                    font-size: 0.675rem;
+                    opacity:1;
+                    padding: 0.25rem 0 0 0.5rem;
+                }
+            }
+            
+        }
+
+        .character-details {
+            padding: 0.5rem 0 1rem;
+            height: 175px;
+            .label {
+                color: #828282;
+                font-weight: bold;
+                text-transform: uppercase;                
+            }
+
+            .description {
+                color: #e09109;
+            }
+
+            .outer-div:last-child {
+                border-bottom:0px;
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    .character-container {
+        width: 155px;
+        .character {
+            width: 155px;
+            .character-image {
+                .image {
+                    width:155px;
+                }               
+            }
+            .character-details {
+                padding: 0.5rem 0 1rem;
+                height: 155px;
+            }
+        }
+    }   
+
+}  
